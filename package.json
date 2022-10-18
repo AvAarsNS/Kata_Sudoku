@@ -1,0 +1,15 @@
+{
+  "name": "Kata_Sudoku",
+  "version": "1.0.0",
+  "description": "Kata Kata_Sudoku",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "jest --verbose",
+    "watch": "jest --watchAll --color --coverage --verbose"
+  },
+  "author": "",
+  "license": "ISC"
+}
