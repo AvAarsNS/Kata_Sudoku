@@ -11,5 +11,8 @@
     "watch": "jest --watchAll --color --coverage --verbose"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "jest": "^29.2.0"
+  }
 }
