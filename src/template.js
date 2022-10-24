@@ -1,17 +1,28 @@
-function doesRowContainNumber(row, number) {
-    return row.includes(number);
+function doesLineContainNumber(line, number) {
+    return line.includes(number);
 }
 
-function isRowAValidSudokuRow(row) {
+function isListAValidSudokuLine(line) {
     for (let number = 1; number <= 9; number++) {
-        if (!doesRowContainNumber(row, number)) {
+        if (!doesLineContainNumber(line, number)) {
             return false;
         }
     }
     return true;
 }
 
+function doesFirstColumnContainAllNumbers(sudoku) {
+    firstColumn = [];
+    for (line of sudoku) {
+        firstColumn.push(line[0]);
+    }
+
+    return isListAValidSudokuLine(firstColumn)
+}
+
+
 module.exports = {
-    doesRowContainNumber,
-    isRowAValidSudokuRow
+    doesLineContainNumber,
+    isListAValidSudokuLine,
+    doesFirstColumnContainAllNumbers
 }
